@@ -1,6 +1,6 @@
 # Andromedev
 
-Site do evento Andromedev.
+Site do evento Andromedev.deplya
 
 ## Desenvolvimento
 
