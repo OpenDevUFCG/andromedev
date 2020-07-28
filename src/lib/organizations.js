@@ -45,7 +45,16 @@ const orgs = [
     category: categories.LAB,
     github: "https://github.com/ufcg-lsd",
     logo: "https://i.imgur.com/oadrDYr.png"
-  }
+  },
+  {
+    name: "Coordenação de Graduação da UASC",
+    slug: "uasc",
+    description:
+      "A Coordenação de Graduação da UASC é responsável pela gestão das atividades acadêmicas do Curso de Ciência da Computação da UFCG. Nesse contexto, apoia diversas iniciativas de software aberto, incluindo algumas voltadas para melhorar a gestão do curso.",
+    category: categories.PARTNER,
+    github: "http://www.computacao.ufcg.edu.br/",
+    logo: "https://i.imgur.com/zlNkrUk.png",
+  },
 ];
 
 function getOrg(slug) {

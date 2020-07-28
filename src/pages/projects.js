@@ -1,5 +1,5 @@
 import React from "react";
-import Project from "../components/project";
+import ProjectCard from "../components/projectCard";
 import Layout from "../components/layouts/layout";
 import { projects } from "../lib/projects";
 
@@ -12,7 +12,7 @@ const ProjectsPage = () => {
         </div>
         <div className="w-full px-32 flex flex-wrap justify-center">
           {projects.map((project, index) => (
-            <Project info={project} key={index} />
+            <ProjectCard info={project} key={index} />
           ))}
         </div>
       </section>
