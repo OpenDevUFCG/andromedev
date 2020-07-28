@@ -1,0 +1,31 @@
+.org-logo-container {
+  max-width: 250px;
+  overflow: hidden;
+}
+  
+.org-logo {
+  max-width: 250px;
+}
+
+.org-card {
+  @apply max-w-lg rounded bg-gray-100 overflow-hidden shadow-lg
+}
+
+.org-tag {
+  font-size: 0.6rem;
+  @apply font-bold uppercase rounded-md text-center p-2 bg-purple-800 text-gray-100
+}
+
+.divider {
+  border-top: 1px solid;
+  border-top-color: rgba(0,0,0,0.12);
+  @apply w-full my-4
+}
+
+.org-link {
+  @apply text-primary rounded-sm p-2 w-full text-center
+}
+
+.org-link:hover {
+  @apply bg-purple-600 text-white
+}

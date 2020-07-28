@@ -1,4 +1,5 @@
 const path = require(`path`);
+const { orgs } = require('./src/lib/organizations')
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -43,14 +44,28 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   const posts = result.data.allMarkdownRemark.edges;
+  const postsTemplate = path.resolve(`./src/templates/post.js`)
 
   posts.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
-      component: path.resolve(`./src/templates/post.js`),
+      component: postsTemplate,
       context: {
         slug: node.fields.slug,
       },
     });
   });
+
+  const organizationTemplate = path.resolve('src/templates/organization.js');
+
+  orgs.forEach(({ slug }) => {
+    createPage({
+      path: `orgs/${slug}`,
+      component: organizationTemplate,
+      context: {
+        slug,
+      }
+    })
+  });
+
 };
