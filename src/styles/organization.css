@@ -8,7 +8,7 @@
 }
 
 .org-description {
-  text-indent: 80px;
+  text-indent: 2.5rem;
   text-align: justify;
   @apply text-gray-500 mt-5 text-lg
 }
