@@ -12,19 +12,19 @@ const Organization = (data) => {
   return (
     <Layout Layout title={name} className="bg-dark-gray" >
       <article className="pt-20 w-full">
-        <div className="flex flex-col md:flex-row mr-auto w-auto items-center justify-center">
-          <div className="m-10 flex flex-col items-center max-w-sm">
-            <div className="org-logo-container">
-              <img className="org-logo" src={logo} alt={name} />
-            </div>
-            <p className="text-gray-500 mt-5 text-lg">
+        <div className="flex flex-col md:flex-row mr-auto w-auto items-center md:items-start justify-center">
+          <div className="m-10 flex flex-col items-center max-w-lg">
+            <div className="font-bold text-xl mb-2 text-center text-white">{name}</div>
+            <p className="org-description">
               {description}
             </p>
           </div>
 
-          <div className="org-card">
+          <div className="max-w-lg rounded-none md:rounded-sm bg-gray-100 overflow-hidden shadow-lg">
             <div className="px-8 py-6 flex flex-col items-center">
-              <div className="font-bold text-xl mb-2 text-gray-700">{name}</div>
+              <div className="org-logo-container">
+                <img className="org-logo" src={logo} alt={name} />
+              </div>
               <div className="org-tag">{category}</div>
               <div className="divider" />
               <div className="w-64 flex items-center justify-center">

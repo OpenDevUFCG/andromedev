@@ -10,7 +10,7 @@ const OrgsPage = () => {
         <div className="w-full flex flex-col pb-5 items-center justify-center">
           <h1>Organizações</h1>
         </div>
-        <div className="w-full px-10 md:px-32 flex flex-wrap justify-center">
+        <div className="w-full px-10 flex flex-wrap justify-center">
           {orgs.map((org, index) => (
             <OrganizationCard info={org} key={index} />
           ))}

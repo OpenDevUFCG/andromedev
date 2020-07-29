@@ -7,13 +7,15 @@
   max-width: 250px;
 }
 
-.org-card {
-  @apply max-w-lg rounded bg-gray-100 overflow-hidden shadow-lg
+.org-description {
+  text-indent: 80px;
+  text-align: justify;
+  @apply text-gray-500 mt-5 text-lg
 }
 
 .org-tag {
   font-size: 0.6rem;
-  @apply font-bold uppercase rounded-md text-center p-2 bg-purple-800 text-gray-100
+  @apply font-bold uppercase rounded-md text-center p-2 bg-gray-400 text-gray-600
 }
 
 .divider {
