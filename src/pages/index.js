@@ -14,7 +14,7 @@ import "../styles/home.css";
 const Home = () => {
   return (
     <Layout title="Início" className={"bg-dark-gray text-white"}>
-      <section className="w-full pt-20">
+      <section className="w-full pt-10">
         <article className="w-full flex justify-center mx-auto">
           <div className="flex flex-col items-center justify-center xl:mx-auto">
             <div className="logo">

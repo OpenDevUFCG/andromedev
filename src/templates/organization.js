@@ -19,7 +19,7 @@ const Organization = (data) => {
 
   return (
     <Layout Layout title={name} className="bg-dark-gray">
-      <article className="pt-20 w-full">
+      <article className="pt-10 w-full">
         <div className="flex flex-col md:flex-row mr-auto w-auto items-center md:items-start justify-center">
           <div className="m-10 flex flex-col items-center max-w-lg">
             <div className="font-bold text-xl uppercase mb-2 text-center text-white">
