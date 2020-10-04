@@ -18,7 +18,7 @@ const Post = ({ data }) => {
   return (
     <Layout title={title} className="bg-gray-100">
       {showNavBar && <Navbar currentPage={slug} className="mt-16 order-1" />}
-      <article className="pt-20">
+      <article className="pt-10">
         <h1 className="mb-8 text-center font-bold text-purple-800 sm:text-lg md:text-xl lg:text-5xl xl:text-5xl ">
           {title}
         </h1>

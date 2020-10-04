@@ -8,11 +8,17 @@ import "./layout.css";
 
 const Layout = ({ children, className, title }) => {
   return (
-    <div className={`flex flex-col min-h-screen ${className}`}>
+    <div className={`flex flex-col max-h-screen ${className}`}>
       <SEO title={title} />
       <Header />
-      <main className="flex-1">{children}</main>
-      <Footer />
+      <div
+        className="overflow-y-auto"
+        //For smooth scrolling (There's no in Tailwind)
+        style={{ scrollBehavior: "smooth" }}
+      >
+        <main className="flex-1 .overflow-y-scroll">{children}</main>
+        <Footer />
+      </div>
     </div>
   );
 };

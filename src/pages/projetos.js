@@ -50,7 +50,7 @@ const ProjectsPage = ({ data: { allPrismicProject } }) => {
 
   return (
     <Layout Layout title={"Projetos"} className="bg-gray-100">
-      <article className="pt-20 w-full">
+      <article className="pt-10 w-full">
         <div className="flex w-full flex-col items-center space-x-4 justify-center mb-6 md:mb-0 p-2">
           <form
             className="flex items-center justify-center border-b border-solid border-purple-600 py-2 w-full md:max-w-lg"
